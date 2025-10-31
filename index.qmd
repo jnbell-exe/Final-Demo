@@ -1,11 +1,31 @@
 ---
-title: My excersize
-format: 
+title: My Excersize
+author: Jascyn Bell
+format:
   html:
-    code_fold: true
+    embed-resources: true
 ---
 
 # This is how you make a graph
 
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
 
+xs = np.linspace(0,1000)
 
+plt.title("y = 24x")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.plot(xs,24 * xs)
+```
+
+# This is how to create a table
+
+```{python}
+import pandas as pd
+
+df = pd.DataFrame(np.array([xs, 24*xs]).transpose()) 
+df.columns = ['x','y']
+df
+```
