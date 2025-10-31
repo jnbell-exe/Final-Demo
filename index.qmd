@@ -1,7 +1,11 @@
 ---
-format:
+title: My excersize
+format: 
   html:
-      embed-resources: true
---- 
+    code_fold: true
+---
 
-Hello World
+# This is how you make a graph
+
+
+
